@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de l'onglet du navigateur -->
+    <title>Dorvil Carmelot | Portfolio de Photographie</title>
+    <!-- Importation Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- En-tête du site avec dégradé CSS -->
+    <header class="main-header">
+        <h1>Dorvil Carmelot</h1>
+        <p>Photographe nomade & Explorateur visuel</p>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#galerie" class="active">Galerie</a></li>
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section Galerie (CSS Grid Layout) -->
+        <section id="galerie" class="gallery-section">
+            <h2>Captures du Monde</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <img src="https://unsplash.com" alt="Plage de sable fin bordée de palmiers sous un coucher de soleil orange et violet aux Maldives.">
+                    <div class="card-content">
+                        <h3>Sérénité Tropicale</h3>
+                        <p>Maldives, 2025</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://unsplash.com" alt="Sommets montagneux enneigés et majestueux pointant vers un ciel bleu pur dans les Alpes.">
+                    <div class="card-content">
+                        <h3>Pics Enneigés</h3>
+                        <p>Alpes Suisses, 2026</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://unsplash.com" alt="Allée bordée de lanternes traditionnelles japonaises en pierre sous des cerisiers en fleurs à Kyoto.">
+                    <div class="card-content">
+                        <h3>Tradition Éphémère</h3>
+                        <p>Kyoto, Japon, 2024</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section À Propos (Flexbox Layout) -->
+        <section id="a-propos" class="about-section">
+            <article class="about-text">
+                <h2>Mon Histoire</h2>
+                <p>Depuis plus de dix ans, je parcours les continents pour capturer l'essence des paysages et la singularité des cultures rencontrées. Mon objectif est de figer l'éphémère pour raconter des histoires sans paroles.</p>
+                <p>Chaque cliché est une invitation au voyage, une fenêtre ouverte sur la beauté brute de notre planète.</p>
+            </article>
+            <aside class="about-stats">
+                <h3>En chiffres</h3>
+                <ul>
+                    <li><strong>35+</strong> Pays visités</li>
+                    <li><strong>12</strong> Expositions</li>
+                    <li><strong>3</strong> Livres publiés</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Dorvil Carmelot. Tous droits réservés.</p>
+        <p>Images d'illustration issues d'Unsplash.</p>
+    </footer>
+
+</body>
+</html>
