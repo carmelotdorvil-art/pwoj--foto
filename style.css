@@ -1,0 +1,201 @@
+/* RESET GÉNÉRAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    color: #2c3e50; /* Code Hexadécimal */
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* EN-TÊTE AVEC DÉGRADÉ LINÉAIRE */
+.main-header {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: rgba(255, 255, 255, 0.95); /* Code RGBA */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* NAVIGATION (Flexbox) */
+.main-nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav ul {
+    display: flex; 
+    justify-content: center;
+    list-style: none;
+}
+
+.main-nav a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover, 
+.main-nav a.active {
+    color: #b21f1f;
+}
+
+/* MISE EN PAGE PRINCIPALE (Margin et Padding) */
+main {
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 0 20px;   
+}
+
+/* GALERIE (CSS Grid) */
+.gallery-section {
+    margin-bottom: 60px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.gallery-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #b21f1f;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; 
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    display: block;
+}
+
+.card-content {
+    padding: 20px; 
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* SECTION À PROPOS (Flexbox) */
+.about-section {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-stats {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgb(241, 243, 245); /* Code RGB */
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.about-stats h3 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.about-stats ul {
+    list-style: none;
+}
+
+.about-stats li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.about-stats strong {
+    color: #b21f1f;
+    font-size: 1.4rem;
+}
+
+/* PIED DE PAGE */
+.main-footer {
+    background-color: #111111;
+    color: rgb(173, 181, 189);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.main-footer p {
+    margin-bottom: 5px;
+}
